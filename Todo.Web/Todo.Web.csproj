@@ -8,8 +8,4 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\TodoForMe\TodoApi.csproj" />
-  </ItemGroup>
-
 </Project>
