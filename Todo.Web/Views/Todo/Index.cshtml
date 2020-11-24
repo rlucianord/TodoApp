@@ -1,0 +1,22 @@
+﻿@model IEnumerable<TodoApi.Models.TodoItemDTO>
+
+@{
+    ViewBag.Title = "Taxes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<ul class="m-lg-auto">
+
+    @foreach (var item in Model)
+    {
+        <li>
+            <a href="~/todo/EditItem/@item.Id" id="btnedit" class="dropdown-item">
+                Edit Registry
+            </a> @item.Id @@@item.Name @@@item.IsComplete
+        </li>
+
+
+
+    }
+</ul>
