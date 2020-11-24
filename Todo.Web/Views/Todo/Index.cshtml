@@ -6,17 +6,28 @@
 }
 
 
-<ul class="m-lg-auto">
+
+
+
+
 
     @foreach (var item in Model)
     {
-        <li>
-            <a href="~/todo/EditItem/@item.Id" id="btnedit" class="dropdown-item">
-                Edit Registry
-            </a> @item.Id @@@item.Name @@@item.IsComplete
-        </li>
+          
+            <div class="col-4">
+                <div class="col-mr-1">
+                    <a href="~/todo/EditItem/@item.Id" id="btnedit" class="dropdown-item">
+                        Edit Registry
+                    </a>
+                </div>
+                <div class="col-2"> @item.Id @@@item.Name @@@item.IsComplete</div>
+
+
+
+            </div>
+
+
 
 
 
     }
-</ul>
