@@ -14,6 +14,16 @@ namespace MyConsoleApp
             name=Console.ReadLine();
         
             Console.WriteLine("Hello my name  is: "+name+ ", my age is :"+edad.ToString()+ ", This is my World!");
+            
+   DoIt();
+
+           
+
+        }
+        static bool DoIt()
+        {
+             Console.WriteLine ("Working ");
+             return false;
         }
     }
 }
